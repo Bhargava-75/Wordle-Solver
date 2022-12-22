@@ -54,6 +54,7 @@ def Wordle():
             first_row_4.configure(fg='white')
             if(type_word==wordle_word):
                 result_label.configure(text = "You Guessed Correct Word")
+                print_recommended_words(["You completed","game in "+ str(count+1)+" steps"])
             else:
                 result_label.config(text = "Enter Your Second Guess")
                 hashed_words=compute_hashed_words_with_same_pattern(pattern,type_word,words)
@@ -105,7 +106,7 @@ def Wordle():
             third_row_4.configure(fg='white')
             if(type_word==wordle_word):
                 result_label.configure(text = "You Guessed Correct Word")
-                print_recommended_words(["You completed","game in "+ str(count)+"steps"])
+                print_recommended_words(["You completed","game in "+ str(count+1)+" steps"])
             else:
                 result_label.config(text = "Enter Your Fourth Guess")
                 hashed_words=compute_hashed_words_with_same_pattern(pattern,type_word,words)
@@ -131,7 +132,7 @@ def Wordle():
             fourth_row_4.configure(fg='white')
             if(type_word==wordle_word):
                 result_label.configure(text = "You Guessed Correct Word")
-                print_recommended_words(["You completed","game in "+ str(count)+"steps"])
+                print_recommended_words(["You completed","game in "+ str(count+1)+" steps"])
             else:
                 result_label.config(text = "Enter Your Fifth Guess")
                 hashed_words=compute_hashed_words_with_same_pattern(pattern,type_word,words)
@@ -157,7 +158,7 @@ def Wordle():
             fifth_row_4.configure(fg='white')
             if(type_word==wordle_word):
                 result_label.configure(text = "You Guessed Correct Word")
-                print_recommended_words(["You completed","game in "+ str(count)+"steps"])
+                print_recommended_words(["You completed","game in "+ str(count+1)+" steps"])
             else:
                 result_label.config(text = "Enter Your Sixth Guess")
                 hashed_words=compute_hashed_words_with_same_pattern(pattern,type_word,words)
@@ -183,7 +184,7 @@ def Wordle():
             sixth_row_4.configure(fg='white')
             if(type_word==wordle_word):
                 result_label.configure(text = "You Guessed Correct Word")
-                print_recommended_words(["You completed","game in "+ str(count)+"steps"])
+                print_recommended_words(["You completed","game in "+ str(count+1)+" steps"])
             else:
                 result_label.config(text = "Sorry, Answer : "+wordle_word)
                 hashed_words=compute_hashed_words_with_same_pattern(pattern,type_word,words)
