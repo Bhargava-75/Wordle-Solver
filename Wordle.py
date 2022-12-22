@@ -102,34 +102,3 @@ def segregate_indices_in_pattern(pattern):
         elif(pattern[i]==2):
             green.append(i)
     return green,grey,yellow
-def play_wordle():
-    words = get_words()
-    wordle_word = get_random_word(words)
-    print()
-    print("Wordle word is "+wordle_word)
-    print()
-    pattern = [-1,-1,-1,-1,-1]
-    final_pattern = [2,2,2,2,2]
-    count=1
-    while(True):
-        print("#Guess "+str(count))
-        print()
-        type_word = input("Enter your Word:")
-        if(wordle_word==type_word):
-            print("\nYour Guess is Correct. Wordle Word is "+type_word)
-            break
-        pattern = compute_pattern(wordle_word,type_word)
-        print("\nPattern : "+str(pattern))
-        hashed_words = compute_hashed_words_with_same_pattern(pattern,type_word,words)
-        print(hashed_words.count("niese"))
-        words=hashed_words
-        print("Recommended words for next time: ")
-        try:
-            for i in range(10):
-                print(words[i])
-        except:
-            print()
-        print()
-        print()
-        print()
-        count=count+1
