@@ -62,41 +62,7 @@ def grey_check(word1,word2,green,grey,yellow): #word1 = typing word , word2 = al
             if(word2_count_i>word1_count_i):
                 return False
     return True
-    """grey_indices=[]
-    green_indices_ele=[]
-    for i in range(5):
-        if(pattern[i]==0):
-            grey_indices.append(i)
-        if(pattern[i]==2):
-            green_indices_ele.append(word1[i])
-    if(len(grey_indices)>0):
-        for i in grey_indices:
-            if word1[i] in green_indices_ele:
-                continue
-            if word1[i] in word2:
-                return False
-    return True"""
 def yellow_check(word1,word2,yellow,green):
-    """yellow_indices=[]
-    green_indices=[]
-    for i in range(5):
-        if(pattern[i]==1):
-            yellow_indices.append(i)
-        if(pattern[i]==2):
-            green_indices.append(i)
-    not_green =[]
-    for i in range(5):
-        if i not in green_indices:
-            not_green.append(i)
-    c=0
-    for x in yellow_indices:
-        for j in not_green:
-            if(x==j):
-                continue
-            if(word1[x] == word2[j]):
-                c=c+1
-                break
-    return True if c==len(yellow_indices) else False"""
     yellow_each_ele=[]
     for i in yellow:
         yellow_ind_ele=[]
