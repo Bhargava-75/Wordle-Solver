@@ -310,6 +310,8 @@ recommend_label.place(relx=0.0, rely=0, relheight=0.125, relwidth=0.5)
 recommend_words_label = tk.Label(right_frame, font=('Microsoft Sans Serif', 13,'bold') , bg = 'black' , fg='white' )
 recommend_words_label.place(relx=0.0, rely=0.13, relheight=0.75, relwidth=0.5)
 
+print_recommended_words(words)
+
 result_label = tk.Label(frame, text="", font=('Courier Prime', 24, 'bold'),bg = "#ffccff", fg='black')
 result_label.place(relx=0.75, rely=0.84,relheight=0.16, relwidth=0.6, anchor='n')
 
