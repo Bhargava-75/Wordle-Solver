@@ -167,11 +167,3 @@ def play_wordle():
         print()
         print()
         count=count+1
-#print(compute_pattern("NIESE","LINES"))
-"""word1="TARES"
-word2="NIESE"
-pattern=[,1,1,2,2]
-green,grey,yellow=segregate_indices_in_pattern(pattern)
-print(green_check(word1,word2,green))
-print(yellow_check(word1,word2,yellow,green))
-print(grey_check(word1,word2,green,grey,yellow))"""
